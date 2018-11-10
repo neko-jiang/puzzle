@@ -28,6 +28,7 @@ mistakes:
 
 time complexity: o(n)
 
+space complexity: o(1)
 self thinking?
 Y
 */
