@@ -24,4 +24,16 @@ class Solution {
     }
 }
 
+/*
+mistakes:
+1. variable name. change variable name and forget to apply the change to every places used. For example from array to array_size, and one place still use array. This cause compile failed. 
+2. loop. 
+A. How many loops are needed? Not able to forsee clearly before writing
+B. Counters inside the loops. The initial value of "counter" is wrongly determined. Previously sets to 0. 
+C. Loop boundary. The inner loops starts from the current value of outside loop and ending with array.size-1
 
+time complexity:
+o(n^2)
+self-thinking?
+Y
+*/
