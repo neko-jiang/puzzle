@@ -1,0 +1,13 @@
+two pointer is really an easy and effective technique which is typically used for searching pairs in a sorted array.
+
+scenario: 
+1. given a sorted array(sorted in ascending order)
+2. having N integers
+3. find if there exists any pair of elements A[i], A[j] such that their sum is equal to X.
+
+How it works?
+The sum of the first and last element of the array is like the mid value of sum of the array. 
+Based on comparision result of mid value and the target sum, move the pointers just like binary search 
+
+Time complexity:
+o(n)

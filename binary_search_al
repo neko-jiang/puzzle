@@ -1,0 +1,7 @@
+time complexity: o(logn)
+prerequisite: sorted array
+divide and conquer
+main method: cut in half and search.
+Return point:
+A. result is found
+B. boundary is invalid. finish searching all numbers
