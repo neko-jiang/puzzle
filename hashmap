@@ -1,0 +1,18 @@
+This notes show how to use HashMap in Java
+HashMap is a Map collection class that is used for sorting Key & value pairs. It is denoted as HashMap <key, value> or HashMap <K, V>. This class makes no guarantees as to the order of the map. It is similar to the Hashtable class except that it is unsynchronized and permits null (null values and null key). 
+
+Note:
+A. A HashMap cannot contain duplicate keys.
+B. allows null values and null key
+C. unordered collection. does not guarantee any specific order
+D. not thread-safe. 
+
+1. Create a HashMap
+HashMap <Integer, String> hmap = new HashMap<Integer, String> ();
+
+2. Add elemetns to HashMap
+hmap.put(12, "Rahul");
+
+3. Get values based on key
+String var = hmap.get(2);
+
