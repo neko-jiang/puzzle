@@ -1,0 +1,47 @@
+A recursive function is a function which either calls itself or is in a potential cycle of function calls. 
+
+   A ---|
+   ^    |
+   |    |
+   |----|
+
+void A() {
+  A();
+  return;
+} 
+
+ A ---------> B
+   ^            |
+   |            |
+   |            |
+   |---- C <----|
+
+This can be viewed in the following three functions:
+
+void C() {
+  A();
+  return;
+}
+
+void B() {
+  C();
+  return;
+}
+
+void A() {
+  B();
+  return;
+}
+
+Recursive functions are an inefficient means of sovling problems in terms of run times but are interesting to study nonetheless. 
+
+Form:
+A recursive function has the following general form.
+ReturnType Function (arguments)
+{
+   if a simple case, return the simple value
+   else call function with simpler version of the problem
+}
+For a recursive function to stop calling itself we require some type of stopping condition. If it is not the base case, then we simplify our computation using the general formula. 
+
+To generalize, a recursive function's memory complexity is O(recursion depth)

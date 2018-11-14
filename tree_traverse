@@ -1,0 +1,32 @@
+Tough the recursive implementation of tree traversals, can be coded very neatly but recursion is generally not perferred. Excessive recursive function calls may cause memoy to run out of stack space. 
+
+since the depth of a balanced binary search tree is about lg(n), we need not worry about running out of stack space. Even if there are a million elements in the tree. 
+
+In computer science, a tree traversal is a form of graph traversal and refers to the process of visiting each node in a tree data structure, exactly once. Such traversals are classfied by the order in which the nodes are visited. The following algorithms are decribed for a binary tree, but they may be generalized to other tress as well. 
+Trees may be traversed in multiple ways. They may be traversed in depth-first or breadth-first order. There are three common ways to traverse them in depth-first order: in-order, pre-order and post-order. 
+Depth-first search is easily implemented via a stack, including recursively(via the call stack), while breadth-first search is easliy implemented via a queue, including corecursively. 
+ 
+In order traversal:
+print the leftmost node first and right most mode at the end. 
+So basically for each node we need to go as far as down and left as possible and then we need to come back and go right. 
+steps of algorithm:
+1. start with node equals root
+2. store the node in the stack and visit its left child
+3. Repeat step2 while2 node is not null, if it's null then pop its parent and print it. 
+4. move to nodee's right child and repeat 1
+5. repeat whole procedure while node is not null and stack is not empty
+
+In-order traversal retrieves data in sorted order for binary search tree.
+
+depth first traversal:
+a. inorder( left, root, right)
+b. preorder(root, left, right)
+c. postorder(left, right, root)
+
+this is classfied by when to visit the root node. For example, if everything is in sequence, it will go with its natural sequence left, root, right. If need to visit the root node first but still keep left, right visiting sequence for the child node, then it's like pre-visit. So it's called preorder. Same for the postorder, which indicate visit the root node last. 
+
+time complexity: o(n)
+space complexity: o(n)
+
+useful link:
+https://java2blog.com/binary-tree-inorder-traversal-in-java/
