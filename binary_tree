@@ -1,0 +1,4 @@
+A binary tree is either empty(represeneted by a null pointer), or is made of a single node, where the left and right pointers each point to a binary tree.
+
+A "binary search tree" (BST) or "ordered binary tree" is a type of binary tree where the nodes are arranged in order. 
+All elements in its left are less or equal to the node, all the elements in its right substree are greater than the node. 

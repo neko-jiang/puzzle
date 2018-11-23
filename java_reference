@@ -1,0 +1,19 @@
+Java always passes arguments by value NOT by reference. 
+public class Main{
+   public static void main(String[] args){
+  Foo f = new Foo("f")
+  changeReference(f);
+}
+
+public static void changeReference(Foo a) {
+Foo b = new Foo("b")
+a = b
+}
+}
+
+In this example, when changeReference is returned, the value of object f won't be changed. 
+it does not have pass by reference in C++, which allow you to transfer data back via function parameters.
+
+Truth#1: Everything in Java is passed by value, objects, however, are never passed at all. 
+
+Truth#2: the value of variables are always primitives or reference, never objects. 

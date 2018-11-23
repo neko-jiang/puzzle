@@ -1,0 +1,26 @@
+ArrayList is a resizable-array implementation of the List interface. It implements all optional list operations, and permits all elements, including null. 
+
+Why ArrayList is better than Array?
+The limitation is that it has a fixed length so if it is full you cannot add any more elements to it, likewise if there are number of elements gets removed from its memory consumption would be the same as it does not shrink. 
+
+On the other ArrayList can dynamically grow and shrink after addition and removal of elements. 
+
+Create ArrayList
+ArrayList<String> alist = new ArrayList<String> ();
+
+Add elements to an ArrayList? 
+alist.add("Steve")
+
+alist.add(3, "Steve")
+
+How to remove elements from ArrayList?
+alist.remove("Steve")
+
+
+Iterating ArrayList
+for (String str:alist)
+
+Update an element
+obj.set(2, "Tom")
+
+
