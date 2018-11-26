@@ -1,0 +1,12 @@
+Bit manipulation is the act of algorithmically manipulating bits or other pieces of data shorter than a word. 
+Operator:
+~ :inverts a bit pattern. reverts all bits. change "00000000" would change its pattern to "11111111".
+
+<< : left shift. shift a bit pattern to left.
+
+>> : right shift. shift a bit pattern to right. 
+
+& : bitwise AND
+^ : Binary XOR Operator copies the bit if it is set in one operand but not both.同为0，异为1.
+
+| : Binary OR Operator copies a bit if it exists in eather operand. 
