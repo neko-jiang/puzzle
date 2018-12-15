@@ -1,0 +1,43 @@
+public class InsertionSort{
+
+     public static void main(String []args){
+         int a [] = new int [] {4,3,2,10,12,1,5,6};
+         insertion_sort(a);
+        for (int i =0; i < a.length;i++)
+        {
+            System.out.println (a[i] + " ");
+        }
+     }
+     
+     public static void insertion_sort(int a[])
+     {
+         /*find the right place to insert*/
+         for (int i = 0; i < a.length; i++)
+         {
+             int position = i;
+             /*compare with all the previous elements*/
+             for (int j = 0; j < i; j++)
+             {
+                 if (a[j] > a[i] )
+                 {
+                     position = j; 
+                     break;
+                 }
+             }
+             insert(a, position, i);
+         }
+     }
+     
+     /*shuffling the array, move all the elements between start, end*/
+     public static void insert(int a[], int start, int end)
+     {
+         if (start >= end) return;
+         int temp = a[end]; /*cache the moving value*/
+         for (int i = end; i > start; i--)
+         {
+             a[i] = a[i-1];
+         }
+         a[start] = temp;
+     }
+    
+}
