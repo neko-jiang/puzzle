@@ -1,0 +1,11 @@
+A sorting algorithm is used to rearrange a given array or list elements according to a comparision operator on the elements. The comparision operator is used to decide the new order of element in the respective data structure. 
+
+Common sorting algorithms:
+Merge sort, insertion sort, bubble sort, quick sort, heaps sort
+
+NOTE:
+It might be in increasing or decreasing order. 
+
+Merge sort:
+Divide and conquer. 
+It divides input array in two halves, call itself for the two halves and then merges the two sorted halves. 
